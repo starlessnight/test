@@ -1,0 +1,2 @@
+D:\workspace\Notepad_Remind2\app\build\intermediates\classes\debug
+D:\workspace\Notepad_Remind2\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0-a495e42302a8ebf554dea12ba33ffb763a8c0337.jar

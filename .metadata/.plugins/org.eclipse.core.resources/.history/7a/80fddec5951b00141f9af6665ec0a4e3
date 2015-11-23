@@ -1,0 +1,62 @@
+package com.time_set;
+
+import android.app.Activity;
+import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
+
+public class choose extends Activity {
+	private Button revise, delete;
+	private mySQLiteOpenHelper mydb= new mySQLiteOpenHelper(choose.this);
+	private SQLiteDatabase db;
+	private int _id;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.choose);
+
+		find_view();
+
+		revise.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				
+				
+			}
+		});
+
+		delete.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				 db=mydb.getWritableDatabase();
+				if(_id!=0){
+					mydb.delete(_id);
+					   
+					   myCursor.requery();
+					   myListView.invalidateViews();
+					   myEditText.setText("");
+					   if (check > 0) {
+						   Toast.makeText(this,  "新增成功", Toast.LENGTH_SHORT)
+						     .show();
+
+						  } else {
+						   Toast.makeText(this, "新增失敗", Toast.LENGTH_SHORT).show();
+						  }
+				  }
+			}
+		});
+	}
+
+	private void find_view() {
+		revise = (Button) findViewById(R.id.revise);
+		delete = (Button) findViewById(R.id.delete);
+
+	}
+
+}

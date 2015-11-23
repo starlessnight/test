@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+    android:background="#ffcb78"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/user"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edituser"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"/>"
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/passwd"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/passwd"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editpasswd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp" >
+
+        <Button
+            android:id="@+id/Loginmember"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Loginmember" />
+
+        <Button
+            android:id="@+id/CloseLogin"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/CloseMember" />
+    </LinearLayout>
+<Button
+            android:id="@+id/addmember"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/addmember" />
+</LinearLayout>

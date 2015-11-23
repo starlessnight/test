@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;GotoMovie/res/drawable/images.jpg&apos; to &apos;box.jpg&apos;" description="Rename resource &apos;images.jpg&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="res/drawable/images.jpg" name="box.jpg" stamp="1402418731551" updateReferences="true"/>
+</session>

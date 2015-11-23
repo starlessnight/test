@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg1"
+    >"
+
+    
+<LinearLayout 
+   	android:layout_width="fill_parent"
+   	android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    
+    >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UserName:    "
+        android:background="#CCCCCC"
+        android:textSize="35dp"
+        />
+    <TextView 
+        android:id="@+id/UserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#CCCCCC"
+        android:text="Name  "
+        android:textSize="35dp"
+        />
+  
+    
+</LinearLayout>
+<TextView
+             android:id="@+id/textView2"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:text="可使用的使用者1"
+             android:textSize="20dp" />
+<TextView
+             android:id="@+id/textView2"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:text="可使用的使用者2"
+             android:textSize="20dp" />
+    <TextView
+             android:id="@+id/textView2"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:text="可使用的使用者3"
+             android:textSize="20dp" />
+    <TextView
+             android:id="@+id/textView2"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:text="可使用的使用者4"
+             android:textSize="20dp" />
+   
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="                待申請帳戶"
+        
+        android:textSize="25dp"
+        android:background="#CCCCCC"
+        />
+    
+ <ScrollView
+         android:id="@+id/scrollView1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" >
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="140dp"
+             android:orientation="vertical" >
+             
+             
+          
+     <LinearLayout 
+        android:layout_width="fill_parent"
+   		android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+        >
+        <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:text="待新增的使用者1"
+        android:textSize="20dp"
+        />
+        
+        <Button 
+            android:id="@+id/new1"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginLeft ="100dp"
+        	android:text="新增"
+            />
+        
+    </LinearLayout>
+     <LinearLayout 
+        android:layout_width="fill_parent"
+   		android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+        >
+        <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:text="待新增的使用者2"
+        android:textSize="20dp"
+        />
+        
+        <Button 
+            android:id="@+id/new1"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginLeft ="100dp"
+        	android:text="新增"
+            />
+        
+    </LinearLayout>
+     <LinearLayout 
+        android:layout_width="fill_parent"
+   		android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+        >
+        <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:text="待新增的使用者3"
+        android:textSize="20dp"
+        />
+
+        
+        
+        <Button 
+            android:id="@+id/new1"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginLeft ="100dp"
+        	android:text="新增"
+            />
+        
+    </LinearLayout>
+<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="待新增的使用者4"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/new1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:text="新增" />
+        </LinearLayout>
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal" >
+
+         <TextView
+             android:id="@+id/textView2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="待新增的使用者5"
+             android:textSize="20dp" />
+
+        
+
+         <Button
+             android:id="@+id/new1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="100dp"
+             android:text="新增" 
+             />
+     </LinearLayout>
+             
+             
+             
+             
+    <LinearLayout 
+        	android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <Button
+        android:id="@+id/SeBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginLeft="200dp"
+        android:text="返回" />
+        
+        
+    </LinearLayout>
+    
+         </LinearLayout>
+     </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="#ffcb78"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="2" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/user"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/edituser"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="40" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/passwd"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/passwd"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/editpasswd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:maxLength="8" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/usermember"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/usermember"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/editusermember"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text" 
+                    android:maxLength="12"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/sex"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sex"
+                    android:textSize="20sp" />
+
+                <RadioGroup
+                    android:id="@+id/radiogroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/boy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/boy"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/girl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/girl"
+                        android:textSize="20sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/editphone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="phone" 
+                    android:maxLength="11"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/cellphone"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cellphone"
+                    android:textSize="20sp" 
+                    android:maxLength="10"/>
+
+                <EditText
+                    android:id="@+id/editcellphone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="phone" 
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/editaddress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:ems="10"
+                    android:inputType="textMultiLine" 
+                    android:maxLength="50"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp" >
+
+        <Button
+            android:id="@+id/SendAddMember"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/SendAddMember" />
+
+        <Button
+            android:id="@+id/CloseMember"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/CloseMember" />
+    </LinearLayout>
+
+</LinearLayout>

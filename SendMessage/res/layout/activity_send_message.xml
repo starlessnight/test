@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+
+<!-- 請輸入手機號碼標籤 -->
+
+<TextView 
+    android:text="@string/hello"
+    android:layout_width="fill_parent"
+	android:layout_height="wrap_content"  
+/>
+
+<!-- 手機號碼編輯框 -->
+
+<EditText 
+    android:id="@+id/mobile"
+    android:layout_width="fill_parent"
+	android:layout_height="wrap_content" 
+	 />
+
+<!-- 請輸入訊息內容標籤 -->
+
+<TextView 
+    android:text="@string/content"
+    android:layout_width="fill_parent"
+	android:layout_height="wrap_content"  
+	/>
+
+<!-- 訊息內容編輯框 -->
+
+<EditText 
+    android:id="@+id/message"
+    android:layout_width="fill_parent"
+	android:layout_height="wrap_content" 
+	android:minLines="3"
+ />
+
+<!-- 傳送按鈕 -->
+
+<Button 
+    
+    android:id="@+id/send"
+    
+    android:layout_width="wrap_content"
+
+android:layout_height="wrap_content" 
+android:text="@string/send"
+
+/>
+
+</LinearLayout>

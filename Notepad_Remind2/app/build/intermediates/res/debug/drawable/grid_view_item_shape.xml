@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+<solid android:color="#BBFCFF"/>
+</shape>
+<!-- From: file:/D:/workspace/Notepad_Remind2/app/src/main/res/drawable/grid_view_item_shape.xml -->

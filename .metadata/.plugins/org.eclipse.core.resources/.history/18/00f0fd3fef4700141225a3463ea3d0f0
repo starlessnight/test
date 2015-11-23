@@ -1,0 +1,25 @@
+package com.notepad_remind;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+
+public class NoteActivity extends Activity {
+
+	protected final static int MENU_ADD = Menu.FIRST;
+	protected final static int MENU_SET = Menu.FIRST + 1;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_note);
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		menu.add(Menu.NONE, MENU_ADD, 0, "新增事件");
+		getMenuInflater().inflate(R.menu.note, menu);
+		return true;
+	}
+
+}

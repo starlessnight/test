@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="initEndDateTime" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="initEndDateTime"/>
+			<item value="id"/>
+			<item value="_id"/>
+			<item value="now_time"/>
+			<item value="url"/>
+			<item value="timeShow"/>
+			<item value="year"/>
+			<item value="@title"/>
+		</list>
+		<list key="replacehistory">
+			<item value="timeView"/>
+			<item value="process"/>
+			<item value="timeService"/>
+			<item value="reviseActivity"/>
+			<item value="PROCESS_name"/>
+			<item value="PROCESS"/>
+			<item value="PROCESS_id"/>
+			<item value="P"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="269" key="DIALOG_WIDTH"/>
+		<item value="1|微軟正黑體|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|微軟正黑體" key="DIALOG_FONT_NAME"/>
+		<item value="387" key="DIALOG_HEIGHT"/>
+		<item value="138" key="DIALOG_Y_ORIGIN"/>
+		<item value="781" key="DIALOG_X_ORIGIN"/>
+	</section>
+</section>

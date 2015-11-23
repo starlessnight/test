@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:gravity="center_horizontal"
+	android:orientation="vertical"
+    	>
+             <LinearLayout 
+                    android:layout_width="fill_parent"
+               		android:layout_height="wrap_content"
+                	android:gravity="center_horizontal"
+                    >
+                    <TextView
+		                android:id="@+id/r_store"
+		                android:layout_width="0dp"
+		                android:layout_height="match_parent"
+		                android:layout_weight="1"
+		                android:gravity="left"
+		                android:maxEms="5"
+		                android:text="店家" />
+		        
+		
+		            <TextView
+		                android:id="@+id/ur_point"
+		                android:layout_width="0dp"
+		                android:layout_height="match_parent"
+		                android:layout_weight="1"
+		                android:textSize="20dp"
+		                android:maxLength="4"
+		                android:gravity="center_horizontal"
+		                android:text="未點數" />
+		        
+		
+		            <TextView
+		                android:id="@+id/nr_point"
+		                android:layout_width="0dp"
+		                android:layout_height="match_parent"
+		                android:layout_weight="1"
+		                android:gravity="center_horizontal"
+		                android:maxEms="4"
+		                android:text="已點數"
+		                android:textSize="18dp" />
+                    
+                    
+                </LinearLayout>
+     
+        
+</LinearLayout>

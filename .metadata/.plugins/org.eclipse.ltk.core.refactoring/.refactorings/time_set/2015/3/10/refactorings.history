@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 3 elements to &apos;drawable&apos;&#x0D;&#x0A;- Original project: &apos;time_set&apos;&#x0D;&#x0A;- Destination element: &apos;drawable&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     grid_view_item_press_shape.xml&#x0D;&#x0A;     grid_view_item_selector_xml.xml&#x0D;&#x0A;     grid_view_item_shape.xml&#x0D;&#x0A;- Update references to refactored element" description="Move files" element1="res/drawable/grid_view_item_press_shape.xml" element2="res/drawable/grid_view_item_selector_xml.xml" element3="res/drawable/grid_view_item_shape.xml" files="3" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1425365529268" target="/Notepad_Remind/res/drawable" units="0" version="1.0"/>
+</session>

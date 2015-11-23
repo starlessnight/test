@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffcb78"
+    android:orientation="vertical" >
+     <LinearLayout 
+            android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="15dp"
+	        android:gravity="center_horizontal"
+	        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btn_menu"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="購物清單"
+            android:textSize="14dp" />
+        
+        <Button
+            android:id="@+id/btn_Bonus"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="點數查詢"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/btn_Out"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="登出"
+            android:textSize="14dp" />
+        
+    </LinearLayout>
+  <ScrollView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      
+      >
+      
+      <LinearLayout 
+          	android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:gravity="center_horizontal"
+		    android:orientation="vertical"
+		     >
+    
+     <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_horizontal"
+                android:maxEms="5"
+                android:text="請按產品內容進入查看明細"
+        />
+     <LinearLayout 
+            android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="15dp"
+	        android:gravity="center_horizontal"
+	        android:orientation="horizontal"
+        >
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="訂單日期"
+                android:textSize="18dp" />
+        
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="產品內容"
+                android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="總價"
+            android:textSize="18dp" />
+        
+    </LinearLayout>
+	 <ericfo.isogon.NEW_gridView    
+    android:id="@+id/gridview_order"  
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:layout_marginLeft="15dp"
+	android:layout_marginRight="15dp"    
+    android:numColumns="1"    
+    android:verticalSpacing="10dp"    
+    android:horizontalSpacing="10dp"    
+    android:columnWidth="90dp"    
+    android:stretchMode="columnWidth"    
+    android:gravity="center"    
+/>
+	 </LinearLayout>
+	 </ScrollView>
+</LinearLayout>

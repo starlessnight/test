@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;mySQLiteOpenHelper.java&apos; to &apos;time_set/src/com.time_set&apos;&#x0D;&#x0A;- Original project: &apos;GDD02&apos;&#x0D;&#x0A;- Destination element: &apos;time_set/src/com.time_set&apos;&#x0D;&#x0A;- Original element: &apos;COM.TQC.GDD02.mySQLiteOpenHelper.java&apos;" description="Copy compilation unit" destination="=time_set/src&lt;com.time_set" element1="/src&lt;COM.TQC.GDD02{mySQLiteOpenHelper.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1406700212758" units="1" version="1.0"/>
+</session>

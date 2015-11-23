@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:background="#ffcb78"
+    android:orientation="vertical"
+     >
+     <LinearLayout 
+            android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="15dp"
+	        android:gravity="center_horizontal"
+	        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btn_Order"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="訂單查詢"
+            android:textSize="14dp" />
+        
+        <Button
+            android:id="@+id/btn_Bonus"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="點數查詢"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/btn_Out"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="登出"
+            android:textSize="14dp" />
+        
+    </LinearLayout>
+    <LinearLayout 
+            android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="15dp"
+	        android:gravity="right"
+	        android:orientation="horizontal"
+        >
+    <Button
+            android:id="@+id/go_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:gravity="right"
+            android:text="繼續購物"
+            android:textSize="14dp" />
+    </LinearLayout>
+  <ScrollView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      
+      >
+      
+      <LinearLayout 
+          	android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:gravity="center_horizontal"
+		    android:orientation="vertical"
+		     >
+		     
+          
+      <TextView
+        android:id="@+id/Store_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="123"
+        android:textSize="26dp" />
+    <LinearLayout 
+            android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:background="#ffa745"  
+	        android:layout_marginTop="15dp"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="15dp"
+	        android:gravity="center_horizontal"
+	        android:orientation="horizontal"
+        >
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="店家"
+                android:textSize="18dp" />
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="商品"
+                android:textSize="18dp" />
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="數量"
+                android:textSize="18dp" />
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="小計"
+                android:textSize="18dp" />
+        
+    </LinearLayout>
+   
+<ericfo.isogon.NEW_gridView    
+    android:id="@+id/gridview"  
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:layout_marginLeft="15dp"
+	android:layout_marginRight="15dp" 
+	android:background="#ffa745"   
+    android:numColumns="1"    
+    android:verticalSpacing="0dp"    
+    android:horizontalSpacing="0dp"    
+    android:columnWidth="90dp"    
+    android:stretchMode="columnWidth"
+    android:gravity="center"    
+/>  
+    
+    
+
+    
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+	    android:layout_weight="1.5"
+	    android:gravity="center_horizontal"
+	    android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="請點選店家結帳"
+                android:textSize="18dp" />
+
+        
+    </LinearLayout>
+	 <LinearLayout 
+            android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:background="#ffa745"  
+	        android:layout_marginTop="15dp"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="15dp"
+	        android:gravity="center_horizontal"
+	        android:orientation="horizontal"
+        >
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="店家"
+                android:textSize="18dp" />
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="小計"
+                android:textSize="18dp" />
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="運費"
+                android:textSize="18dp" />
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="合計"
+                android:textSize="18dp" />
+        
+        
+    </LinearLayout>
+     <ericfo.isogon.NEW_gridView     
+    android:id="@+id/gridview_CK"  
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffa745"
+	android:layout_marginLeft="15dp"
+	android:layout_marginRight="15dp"
+	android:layout_marginBottom="10dp"
+	android:descendantFocusability="blocksDescendants"
+	android:focusable="false"    
+    android:numColumns="1"    
+    android:verticalSpacing="10dp"    
+    android:horizontalSpacing="10dp"    
+    android:columnWidth="90dp"    
+    android:stretchMode="columnWidth"    
+    android:gravity="center"    
+/>     
+          
+          
+          </LinearLayout>
+      
+  </ScrollView>
+    
+</LinearLayout>

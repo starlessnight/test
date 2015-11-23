@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.notepad_remind"
+    android:installLocation="internalOnly"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        
+                    
+        <activity
+            android:name="com.notepad_remind.NoteActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        
+        <activity
+            android:name="com.notepad_remind.Create_activity"
+            android:label="@string/app_name"
+            >
+		</activity>
+		
+		<activity 
+		    android:name="com.notepad_remind.choose"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Dialog"
+		    >
+		    
+		</activity>
+		
+		<activity 
+		    android:name="com.notepad_remind.Note_content"
+            android:label="@string/app_name" 
+		    >
+		    
+		</activity>
+		
+		<activity 
+		    android:name="com.notepad_remind.Revise_activity"
+            android:label="@string/app_name" 
+		    >
+		    
+		</activity>
+		
+		<activity android:name=".AlarmAlert"
+              android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+        
+        <activity android:name=".Set_upActivity"
+              android:label="@string/app_name">
+        </activity>
+		<receiver android:name=".CallAlarmText"  >
+       			
+			</receiver>
+    </application>
+</manifest>

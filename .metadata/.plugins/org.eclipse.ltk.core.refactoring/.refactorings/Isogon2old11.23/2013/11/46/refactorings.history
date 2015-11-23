@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Isogon2/res/layout/android_order_details.xml&apos; to &apos;activity_order_details.xml&apos;" description="Rename resource &apos;android_order_details.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="res/layout/android_order_details.xml" name="activity_order_details.xml" stamp="1384192485082" updateReferences="true"/>
+</session>

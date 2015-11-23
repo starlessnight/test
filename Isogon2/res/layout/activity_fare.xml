@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#ffcb78"
+    android:orientation="vertical" >
+    
+    <ScrollView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      
+      >
+      
+      <LinearLayout 
+          	android:layout_width="fill_parent"
+		    android:layout_height="match_parent"
+		    android:gravity="center_horizontal"
+		    android:orientation="vertical"
+		     >
+    <TextView 
+         android:id="@+id/store_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_horizontal"
+                android:maxEms="5"
+                android:text="店家名"
+        />
+    <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="Step1:付款方式"
+                android:textColor="#FF0000"
+        />
+		<RadioGroup
+                    android:id="@+id/pay_radiogroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    
+		    "
+                    </RadioGroup>
+    <TextView
+        android:id="@+id/q_Style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="付款方式XXXXXXXXXXXXXOOOOO" />
+
+	<TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="Step2:產品清單"
+                android:textColor="#FF0000"
+        />
+	<LinearLayout 
+            android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="15dp"
+	        android:gravity="center_horizontal"
+	        android:orientation="horizontal"
+        >
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="品名"
+                android:textSize="18dp" />
+        
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="數量"
+                android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="小計"
+            android:textSize="18dp" />
+        
+    </LinearLayout>
+   <ericfo.isogon.NEW_gridView    
+    android:id="@+id/gridview_persion"  
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:layout_marginLeft="15dp"
+	android:layout_marginRight="15dp"    
+    android:numColumns="1"    
+    android:verticalSpacing="10dp"    
+    android:horizontalSpacing="10dp"    
+    android:columnWidth="90dp"    
+    android:stretchMode="columnWidth"    
+    android:gravity="center"    
+/>
+   <LinearLayout 
+            android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="15dp"
+	        android:gravity="center_horizontal"
+	        android:orientation="horizontal"
+        >
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="小計"
+                android:textSize="18dp" />
+        
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/Sub"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="price"
+            android:textSize="18dp" />
+        
+    </LinearLayout>
+   <LinearLayout 
+            android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="15dp"
+	        android:gravity="center_horizontal"
+	        android:orientation="horizontal"
+        >
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="運費"
+                android:textSize="18dp" />
+        
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/Shipping"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="price"
+            android:textSize="18dp" />
+        
+    </LinearLayout>
+    <LinearLayout 
+            android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="15dp"
+	        android:gravity="center_horizontal"
+	        android:orientation="horizontal"
+        >
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="本次可扣抵紅利點數"
+                android:textSize="18dp" />
+        
+        
+
+        <TextView
+            android:id="@+id/Bonus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="price"
+            android:textSize="18dp" />
+        
+    </LinearLayout>
+    <LinearLayout 
+            android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="15dp"
+	        android:gravity="center_horizontal"
+	        android:orientation="horizontal"
+        >
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="合計"
+                android:textSize="18dp" />
+        
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="price"
+            android:textSize="18dp" />
+        
+    </LinearLayout>
+    <TextView
+        android:id="@+id/AddBonus"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="紅利~~~~~~~~~~~~~~~~~~~~~~~~~" />
+   
+    <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="Step3:請確認收件人資訊"
+                android:textColor="#FF0000"
+        />
+    
+    <LinearLayout 
+            android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="15dp"
+	        android:gravity="center_horizontal"
+	        android:orientation="horizontal"
+        >
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="姓名:"
+                android:textSize="15dp" />
+        
+        <EditText 
+           		android:id="@+id/mb_name"
+            	android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="姓名"
+                android:textSize="15dp"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="0dp"
+            android:gravity="left"
+            android:text="先生/小姐"
+            android:textSize="15dp" />
+        
+    </LinearLayout>
+    <LinearLayout 
+            android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="15dp"
+	        android:gravity="center_horizontal"
+	        android:orientation="horizontal"
+        >
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="手機:"
+                android:textSize="15dp" />
+        
+        <EditText 
+            	android:id="@+id/mb_cell"
+            	android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="手機"
+                android:textSize="15dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout 
+            android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="15dp"
+	        android:gravity="center_horizontal"
+	        android:orientation="horizontal"
+        >
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="電話:"
+                android:textSize="15dp" />
+        
+        <EditText 
+            	android:id="@+id/mb_tell"	
+            	android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="電話"
+                android:textSize="15dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout 
+            android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="15dp"
+	        android:gravity="center_horizontal"
+	        android:orientation="horizontal"
+        >
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="地址:"
+                android:textSize="15dp"/>
+        
+        <EditText 
+            	android:id="@+id/mb_address"
+            	android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="地址"
+                android:textSize="15dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout 
+            android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="15dp"
+	        android:gravity="center_horizontal"
+	        android:orientation="horizontal"
+        >
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Mail:"
+                android:textSize="15dp"/>
+        
+        <EditText 
+            	android:id="@+id/mb_mail"
+            	android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Mail"
+                android:textSize="15dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout 
+        	android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="15dp"
+	        android:gravity="center_horizontal"
+	        android:orientation="horizontal"
+        
+        >
+        	<RadioGroup
+                    android:id="@+id/time_radiogroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/t1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="任何時段"
+                        android:textSize="12dp" />
+
+                    <RadioButton
+                        android:id="@+id/t2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="中午"
+                        android:textSize="12dp" />
+                
+                   
+
+                    <RadioButton
+                        android:id="@+id/t3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="下午"
+                        android:textSize="12dp" />
+
+                    <RadioButton
+                        android:id="@+id/t4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="晚上"
+                        android:textSize="12dp" />
+                </RadioGroup>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+            android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="15dp"
+	        android:gravity="center_horizontal"
+	        android:orientation="horizontal"
+        >
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="備註:"
+                android:textSize="15dp"/>
+        
+        <EditText 
+            	android:id="@+id/mb_say"
+            	android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="2"
+                android:ems="10"
+                android:inputType="textImeMultiLine"
+                android:text=""
+                android:textSize="15dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout 
+            android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="15dp"
+	        android:gravity="center_horizontal"
+	        android:orientation="horizontal"
+        >
+        <Button
+            	android:id="@+id/send_fare"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="送出"
+                android:textSize="15dp"/>
+        
+        <Button 
+            	android:id="@+id/fare_cancel"
+            	android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="取消"
+                android:textSize="15dp"
+            />
+
+    </LinearLayout>
+   </LinearLayout>
+   </ScrollView>
+</LinearLayout>

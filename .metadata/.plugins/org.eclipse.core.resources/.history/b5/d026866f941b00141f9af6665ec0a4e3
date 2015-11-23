@@ -1,0 +1,44 @@
+package com.time_set;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+public class choose extends Activity {
+	private Button revise, delete;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.choose);
+
+		find_view();
+
+		revise.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				
+				
+			}
+		});
+
+		delete.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
+	}
+
+	private void find_view() {
+		revise = (Button) findViewById(R.id.revise);
+		delete = (Button) findViewById(R.id.delete);
+
+	}
+
+}

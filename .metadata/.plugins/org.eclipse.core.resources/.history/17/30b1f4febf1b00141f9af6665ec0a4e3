@@ -1,0 +1,153 @@
+package com.time_set;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemLongClickListener;
+import android.widget.GridView;
+import android.widget.SimpleAdapter;
+import android.widget.TextView;
+import android.widget.AdapterView.OnItemClickListener;
+
+public class process extends Activity {
+
+	private GridView gridView;
+	private SimpleAdapter adapter;
+	static Activity process;
+	private TextView process_name;
+	protected final static int MENU_ADD = Menu.FIRST;
+	private SQLiteDatabase db;
+	private Cursor myCursor;
+	private String[] id, name;
+	private int[] id2;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.process);
+		process = this;
+
+		findView();
+
+		mySQLiteOpenHelper helper = new mySQLiteOpenHelper(process.this,"process");
+		db = helper.getReadableDatabase();
+		myCursor = db.rawQuery("select * from process ;", null);
+		String[] colNames = myCursor.getColumnNames();
+
+		id = new String[myCursor.getCount()];
+		name = new String[myCursor.getCount()];
+		id2=new int[myCursor.getCount()];
+		myCursor.moveToFirst();
+		for (int i = 0; i < myCursor.getCount(); i++) {
+			id2[i]=myCursor.getInt(myCursor.getColumnIndex(colNames[0]));
+			id[i] = myCursor.getString(myCursor.getColumnIndex(colNames[0]))
+					+ "\t\t";
+			name[i] = myCursor.getString(1) + "\n"; // 第2欄位
+			// 第3欄位
+			// .............如果還要顯示其它欄位，就要再複製上面一行
+			myCursor.moveToNext(); // 下一筆
+		}
+		
+		//System.out.println(name[2]);
+		ArrayList<HashMap<String, Object >> list = new ArrayList<HashMap<String, Object >>();
+		HashMap<String, Object> data = null;
+		// 將資料從字串取出
+		if (myCursor.getCount() > 0) {
+			for (int i = 0; i < myCursor.getCount(); i++) {
+				data = new HashMap<String, Object>();
+				data.put("pn",id[i]);
+				data.put("pc", name[i]);
+				System.out.println(name[i]);
+				list.add(data);
+			}
+			
+			// 將資料放入對應的位子
+			adapter = new SimpleAdapter(this, list, R.layout.process_item,new String[] { "pn", "pc" }, new int[] { R.id.process_id,
+							R.id.process_name });
+
+			gridView.setOnItemLongClickListener(new OnItemLongClickListener() {
+
+				@Override
+				public boolean onItemLongClick(AdapterView<?> arg0, View arg1,
+						int arg2, long arg3) {
+					// TODO Auto-generated method stub
+					Intent intent=new Intent();
+					Bundle bundle=new Bundle();
+					System.out.println(id[arg2]);
+					bundle.putString("which", id[arg2]);
+					intent.putExtras(bundle);
+					intent.setClass(process.this, choose.class);
+					startActivity(intent);
+					
+					return false;
+				}
+
+				
+			});
+			
+			gridView.setOnItemClickListener(new OnItemClickListener() {
+
+				@Override
+				public void onItemClick(AdapterView<?> arg0, View arg1,
+						int arg2, long arg3) {
+					// TODO Auto-generated method stub
+					//myCursor = db.rawQuery("select PROCESS_ftTimetext,PROCESS_lstTimetext from process where _id=?;", new String[]{id[arg2]});
+					Intent intent=new Intent();
+					intent.putExtra("id", id[arg2]);
+					/*while (myCursor.moveToNext()) {
+					    String ft = myCursor.getString(0);
+					    String lt = myCursor.getString(1);
+					    System.out.println("PROCESS_ftTimetext:,"+ ft + ",PROCESS_lstTimetext " + lt);
+					    
+					}*/
+					intent.setClass(process.this,timeService.class );
+					startService(intent);
+					
+				}
+			});
+
+			gridView.setAdapter(adapter);
+		}
+
+	}
+
+	private void findView() {
+		gridView = (GridView)findViewById(R.id.dataView);
+
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		super.onOptionsItemSelected(item);
+		switch (item.getItemId()) {
+		case MENU_ADD:
+			Intent intent = new Intent();
+			intent.setClass(process.this, MainActivity.class);
+			System.out.println("新增");
+			startActivity(intent);
+			break;
+		
+		}
+		return true;
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		super.onCreateOptionsMenu(menu);
+		menu.add(Menu.NONE, MENU_ADD, 0, R.string.strAddButton);
+		
+
+		return true;
+	}
+
+	
+}

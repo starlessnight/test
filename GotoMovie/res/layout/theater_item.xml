@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/box"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical" >
+
+    
+    <TextView
+        android:id="@+id/MvTheater"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="#2DFF7B"
+        android:text="電影院" />
+
+   
+
+
+    
+	
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="10dp"
+    	android:orientation="horizontal"
+	    >
+	    <TextView
+        android:id="@+id/Show_time"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="2"
+        android:textSize="25dp"
+        android:text="時刻" />
+	    
+	    <TextView
+        android:id="@+id/Distance"
+       	android:layout_gravity="bottom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#11FF38"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:text="距離" />
+	    
+	</LinearLayout>
+	
+</LinearLayout>

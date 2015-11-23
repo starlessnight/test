@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">汽車控制與事故通知系統</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="btn1">控制</string>
+    <string name="btn2">帳戶管理</string>
+    <string name="btn3">求救設定</string>
+    <string name="first_title">請稍後片刻</string>
+    <string name="first_body">正在儲存</string>
+    <string name="strmylocation">目前所在位子 :</string>
+<string name="str_longitude">經度(Longitude)：</string>
+  <string name="str_latitude">緯度(Latitude)：</string>
+  <string name="str_err_address">地址不存在</string>
+  <string name="str_cmd_sending">已傳送</string>
+    </resources>

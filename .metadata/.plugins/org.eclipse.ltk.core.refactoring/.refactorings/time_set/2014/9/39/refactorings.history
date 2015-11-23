@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;NEW_gridView.java&apos; to &apos;Notepad_Remind/src/com.notepad_remind&apos;&#x0D;&#x0A;- Original project: &apos;time_set&apos;&#x0D;&#x0A;- Destination element: &apos;Notepad_Remind/src/com.notepad_remind&apos;&#x0D;&#x0A;- Original element: &apos;com.time_set.NEW_gridView.java&apos;" description="Copy compilation unit" destination="=Notepad_Remind/src&lt;com.notepad_remind" element1="/src&lt;com.time_set{NEW_gridView.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1411269928223" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal" 
+    android:background="@drawable/bg1"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/close"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="解鎖" />
+
+        <Button
+            android:id="@+id/opean"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="上鎖" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/Sp1"
+            android:layout_width="60dp"
+            android:layout_height="85dp"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="120dp"
+            android:layout_height="95dp"
+            android:text="發動" />
+
+        <Button
+            android:id="@+id/upC"
+            android:layout_width="60dp"
+            android:layout_height="85dp"
+            android:text="上" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/Sp2"
+            android:layout_width="60dp"
+            android:layout_height="85dp"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/shotdown"
+            android:layout_width="120dp"
+            android:layout_height="95dp"
+            android:text="熄火" />
+
+        <Button
+            android:id="@+id/dnC"
+            android:layout_width="60dp"
+            android:layout_height="85dp"
+            android:text="下" />
+    </LinearLayout>
+    
+
+    <Button
+        android:id="@+id/ClBack"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        
+        android:text="返回" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="0dp"
+        android:layout_height="dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+</LinearLayout>
